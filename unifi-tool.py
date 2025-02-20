@@ -1,0 +1,24 @@
+import unifi_login
+import unifi_poe
+import tkinter as tk
+import common
+
+toolWindow = None
+
+def showWindow():
+    toolWindow = tk.Tk()
+    toolWindow.title("Unifi tool")
+    common.setup_window(toolWindow)
+
+    button = tk.Button(toolWindow, text="PoE power cycle tool", command=unifi_poe.showWindow)
+    button.pack()
+
+    toolWindow.mainloop()
+
+def main():
+    unifi_login.showWindow()
+    if(unifi_login.isLoggedIn):
+        showWindow()
+
+if __name__ == "__main__":
+    main()
