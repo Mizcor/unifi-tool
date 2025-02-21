@@ -9,7 +9,8 @@ settings = None
 
 defaultSettings = {
     "base_url": "https://unifi:8443/",
-    "site": "default"
+    "site": "default",
+    "export_path": "export"
     }
 
 def writeSettingsToDisk():

@@ -1,5 +1,6 @@
 import unifi_login
 import unifi_poe
+import unifi_device
 import tkinter as tk
 import common
 
@@ -11,6 +12,8 @@ def showWindow():
     common.setup_window(toolWindow)
 
     button = tk.Button(toolWindow, text="PoE power cycle tool", command=unifi_poe.showWindow)
+    button.pack()
+    button = tk.Button(toolWindow, text="Devices", command=unifi_device.showWindow)
     button.pack()
 
     toolWindow.mainloop()

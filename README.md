@@ -1,9 +1,13 @@
 # UniFi Tool
 This tool is meant to help with operations that are otherwise difficult or tedious to perform in the Network Application.
 
-The only current feature is the ability to PoE power cycle all clients on a network by VLAN ID or cycle a client by its IP or MAC address.
+### Current Features:
+* PoE Operations:
+  * PoE power cycle clients by VLAN ID
+  * PoE power cycle client by IP or MAC address
+* Export entire device configs to JSON
 
-# Notes
+### Notes
 This has only been tested on HostiFi
 
 No additional dependencies are needed other than Python 3
