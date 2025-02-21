@@ -1,6 +1,7 @@
 # UniFi Tool
 This tool is meant to help with operations that are otherwise difficult or tedious to perform in the Network Application.
 
+![GuI Demo](/images/app.png)
 ### Current Features:
 * PoE Operations:
   * PoE power cycle clients by VLAN ID
