@@ -34,10 +34,7 @@ def showWindow():
     global usernamebox
     global passwordbox
 
-    loginWindow = tk.Tk()
-
-    loginWindow.title("Unifi tool login")
-    common.setup_window(loginWindow)
+    loginWindow = common.create_window('Unifi Login')
     loginWindow.grid_columnconfigure((0,1), weight=1)
 
     usernamebox = tk.Entry(loginWindow)

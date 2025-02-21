@@ -7,9 +7,7 @@ import common
 toolWindow = None
 
 def showWindow():
-    toolWindow = tk.Tk()
-    toolWindow.title("Unifi tool")
-    common.setup_window(toolWindow)
+    toolWindow = common.create_window('UniFi Tools')
 
     button = tk.Button(toolWindow, text="PoE power cycle tool", command=unifi_poe.showWindow)
     button.pack()

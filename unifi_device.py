@@ -58,9 +58,7 @@ def showWindow():
     global devices
     global deviceInfoBox
     global exportSelectedButton
-    deviceWindow = tk.Tk()
-    deviceWindow.title('UniFi Devices')
-    common.setup_window(deviceWindow)
+    deviceWindow = common.create_window('UniFi Devices')
 
     listbox = tk.Listbox(deviceWindow, selectmode='browse')
     scrollbar = tk.Scrollbar(deviceWindow)

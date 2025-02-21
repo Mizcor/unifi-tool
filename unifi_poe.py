@@ -127,8 +127,7 @@ def showWindow():
     
     isPoeToolOpen = True
 
-    poeWindow = tk.Tk()
-    common.setup_window(poeWindow)
+    poeWindow = common.create_window('PoE Tool')
     poeWindow.protocol("WM_DELETE_WINDOW", onClose)
 
     entryLabel = tk.Label(poeWindow, text="VLAN ID (all clients) or client IP/MAC")

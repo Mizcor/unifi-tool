@@ -1,8 +1,12 @@
-def setup_window(window):
-    window.title("Unifi PoE tool")
+import tkinter as tk
+
+def create_window(title):
+    window = tk.Tk()
+    window.title(title)
     window.iconbitmap("unifi.ico")
     window.configure(borderwidth="10")
     window.tk_setPalette(background="#03244D")
+    return window
 
 def get_first_value_of_where(list, wantedKey, knownKey, knownValue):
     for item in list:
